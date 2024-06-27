@@ -1,0 +1,30 @@
+/* navbar.css */
+.navbar {
+  background-color: rgb(255, 77, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem; /* Decrease the gap between nav items */
+}
+
+.navbar-nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar-nav a:hover {
+  color: #ffdc4e;
+}

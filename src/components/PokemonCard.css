@@ -1,0 +1,26 @@
+.pokemon-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 25rem;
+  margin: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* Add cursor pointer to indicate the card is clickable */
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: auto;
+}
+
+.pokemon-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pokemon-id,
+.pokemon-type {
+  font-size: 1em;
+  color: #555;
+}

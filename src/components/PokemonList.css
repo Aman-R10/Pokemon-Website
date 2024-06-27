@@ -1,0 +1,7 @@
+/* src/components/PokemonList/PokemonList.css */
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}

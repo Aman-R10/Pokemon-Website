@@ -1,0 +1,86 @@
+.logo-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between the logo and the search field */
+  padding: 20px; /* Optional: Add some padding around the container */
+}
+/* src/pages/Home/Home.css */
+.logo-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.logo-container {
+  margin-bottom: 0px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.logo-container {
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.logo {
+  max-width: 1000px;
+  height: 18rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust the gap between the input and the button */
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.search-button {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  max-width: 30px; /* Adjust the size of the search icon */
+  height: auto;
+}
+
+
+.search-button {
+  background-color: #f0cf01;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 50px;
+  height: 30px;
+}
+
+.search-button:hover {
+  background-color: rgb(255, 77, 77);
+}
