@@ -6,6 +6,7 @@ import "./PokemonCardDetail.css";
 import DetailCard from "../../components/DetailCard";
 import "../../components/DetailCard.css";
 import { formatHeight, formatWeight } from "../../utils/format";
+import MovesTable from "../../components/MovesTable";
 
 // Import SVG icons
 import bugIcon from "../../assets/types/bug.svg";
@@ -66,7 +67,7 @@ const typeColor = {
   water: "#0190FF",
 };
 
-const PokemonCardDetail = () => {
+const PokemonCardDetail = ({ moves: movesData }) => {
   const { pokemon, speciesData, evolutionChain, locations } =
     PokemonCardDetailLogic();
   const [section, setSection] = useState("about");
@@ -285,15 +286,7 @@ const PokemonCardDetail = () => {
                   <p>{weaknesses.join(", ")}</p>
                 </div>
                 <h3>Moves:</h3>
-                <ul>
-                  {moves.map((move, index) => (
-                    <li key={index}>
-                      <strong>{move.name}</strong> - Power: {move.power} - PP:{" "}
-                      {move.pp} - Accuracy: {move.accuracy} - Category:{" "}
-                      {move.category}
-                    </li>
-                  ))}
-                </ul>
+                <MovesTable movesList={moves} />
               </div>
             )}
             {section === "stats" && (
