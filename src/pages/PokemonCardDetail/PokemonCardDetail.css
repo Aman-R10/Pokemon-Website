@@ -1,32 +1,43 @@
+:root {
+  --underline-color: black; /* Default color */
+}
+
 .pokemon-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 3px;
 }
 
 .back-arrow {
-  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  align-items: center; /* Align items vertically centered */
+  height: 2.4rem;
+  margin-right: 67rem;
 }
 
 .back-button {
-  font-size: 2rem;
   cursor: pointer;
+  font-size: 35px;
+  margin-top: 0.2rem;
+}
+
+.home {
+  margin-left: 1rem; /* Adjust the margin as needed */
+  font-size: 30px;
 }
 
 .content {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 20px;
   box-sizing: border-box;
 }
 
-.left, .right {
+.left,
+.right {
   flex: 1;
-  padding: 20px;
+  padding: 1px;
 }
 
 .left {
@@ -35,30 +46,139 @@
   align-items: center;
 }
 
+.left-heading {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35rem;
+  margin-right: 4.5rem;
+  font-size: 1.3rem;
+}
+
+.left-heading h1 span {
+  color: grey;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.glow-image {
+  height: 17rem;
+  width: 25rem;
+}
+
+.evolution-heading {
+  margin-right: 22rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 .evolution-chain {
-  margin-top: 20px;
+  display: flex;
+  width: 40rem;
+  gap: 50px;
+  margin-left: 50px;
 }
 
 .evolution {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
+  flex-direction: column; /* Change to column for vertical alignment */
+  align-items: center; /* Center align images and names */
+  position: relative; /* Ensure the type circle is positioned correctly */
 }
 
+.evolution img {
+  width: 150px;
+  height: auto;
+}
+
+.evolution p {
+  margin-top: 5px; /* Space above the name */
+  text-align: center;
+}
+
+/* Right Side Content */
 .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   margin-bottom: 20px;
+  margin-top: 0rem;
 }
 
 .navigation button {
   padding: 10px;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  transition: all 1s ease;
 }
 
-.info {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.navigation button.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--underline-color);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: all 1s ease;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add some space between the icons */
+}
+
+.type-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.about-section {
+  margin-bottom: 10px;
+}
+
+.about-section h3 {
+  font-size: 1.5rem; /* Adjust heading size */
+  margin-bottom: 5px; /* Add margin below the heading */
+  color: black; /* Set a color for the heading */
+  font-weight: 600; /* Make the heading bolder */
+}
+
+.about-section p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.desc-para {
+  font-size: 1.2rem; /* Adjust font size for readability */
+  line-height: 1.2; /* Set line height for better spacing */
+  font-weight: 500; /* Adjust font weight (400 is normal) */
+  color: #333; /* Set a dark color for the text */
+  margin: 5px 0; /* Add margin to separate from other elements */
+  text-align: left; /* Left align the text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  width: 423px; /* Set a fixed width to control text wrapping */
+  word-wrap: break-word; /* Ensure long words break to avoid overflow */
+}
+
+.card-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 10px; /* Space between cards */
+  margin-top: 20px;
+  margin-right: 5rem;
+}
+
+.type-icon {
+  transition: transform 0.3s ease;
+}
+
+.type-icon:hover {
+  transform: scale(1.2); /* Scale up to 120% */
 }

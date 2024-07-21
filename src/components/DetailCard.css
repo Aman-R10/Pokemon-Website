@@ -1,0 +1,40 @@
+.detail-card {
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 5px; /* Padding inside the card */
+  margin: 10px 0; /* Margin around the card */
+  text-align: left; /* Align text to the left */
+  width: 75%; /* Full width */
+  max-width: 300px; /* Maximum width of the card */
+  align-items: center;
+}
+
+.detail-card:hover{
+  scale: 1.2;
+  transition: 0.2s;
+}
+.detail-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.detail-data {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+.gender-image {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.generation-image {
+  max-width: 100%;
+  height: auto;
+}

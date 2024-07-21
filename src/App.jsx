@@ -7,6 +7,9 @@ import Favorite from './pages/Favorite/Favorite';
 import Game from './pages/Game/Game';
 import About from './pages/About/About';
 import PokemonCardDetail from './pages/PokemonCardDetail/PokemonCardDetail';
+import WhoIsThatPokemon from './pages/Game/WhoIsThatPokemon';
+import PokemonCompare from './pages/Game/PokemonCompare';
+import PuzzleImage from './pages/Game/PuzzleImage';
 import './App.css'; // Adjusted the path
 
 // Create a client
@@ -22,6 +25,9 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/game/who-is-that-pokemon" element={<WhoIsThatPokemon />} />
+        <Route path="/game/pokemon-compare" element={<PokemonCompare />} />
+        <Route path="/game/puzzle-image" element={<PuzzleImage />} />
         <Route path="/about" element={<About />} />
         <Route path="/pokemon/:id" element={<PokemonCardDetail />} />
         <Route path="*" element={<div>Page Not Found</div>} />
